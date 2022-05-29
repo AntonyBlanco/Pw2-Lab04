@@ -70,23 +70,14 @@
         <tr>
             <td>
             I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-            Repositorios personales<br>
-            <ol>
-                <li>Blanco Trujillo, Antony Jacob<br>https://github.com/AntonyBlanco/pw2Lab</li>
-                <li>Cahuana Aguilar, Josué Mathías Miguel<br>https://github.com/josuecahuana/PW2-Josue_Cahuana.git</li>
-                <li>Hancco Velásquez, Jessica Geraldine<br>https://github.com/JessHV/PW2-Jessica_Hancco.git</li>
-                <li>Mayta Nolasco, Oliver Alessandro<br>https://github.com/oliver092377/pw2Lab1</li>
-                <li>Umasi Cariapaza, Carlos Daniel<br>https://github.com/cumasic/PW2</li>
-            </ol>
-            Repositorio general<br>https://github.com/JessHV/PW2-Lab.git
             </td>
         </tr>
         <tr>
             <td>
             II. SOLUCIÓN DEL CUESTIONARIO<br>
-            <b>¿Por qué Git es una herramienta importante en el curso de Programación Web 2?</b><br>
-            El curso de Programación Web 2 incluirá trabajos en equipo e individuales, los cuales implican en cualquier sentido el uso de la programación.
-            Para el caso de uso de frameworks y/o tareas en equipo se trabajará con proyectos complejos en forma de plantilla, por lo cual se pueden cometer errores o se necesitarán realizar pruebas y eso se vuelve un trabajo que toma mucho tiempo, es por ello que requerimos de un sistema de control de versiones, como el caso de Git que es una herramienta importante porque nos permite trabajar en grupo de manera eficiente y progresiva, esto debido a que nos permite hacer “commits”, puntos de guardado que nos permitirán regresar a una versión en la cual no haya errores.
+            <b>¿Qué son los archivos *.pyc?</b><br>
+            <b>¿Para qué sirve el directorio pycache?</b><br>
+            <b>¿Cuáles son los usos y lo que representa el subguión en Python?</b><br>
             </td>
         </tr>
         <tr>
