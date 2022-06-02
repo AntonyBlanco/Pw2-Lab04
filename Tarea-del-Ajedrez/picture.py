@@ -1,3 +1,4 @@
+from importlib.resources import contents
 from colors import *
 class Picture:
   def __init__(self, img):
@@ -22,11 +23,19 @@ class Picture:
   def negative(self):
     """ Devuelve un negativo de la imagen """
     return Picture(None)
-
+  #yo mero :v
   def join(self, p):
+    count=0
+    content=list()
+    print("len de p: ",len(p.img),"len de self: ",len(self.img))
+    for x in self.img:
+      content.append(x)
+    for y in p.img:
+      content[count]+=y
+      count=count+1
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(None)
+    return Picture(content)
 
   def up(self, p):
     content = p.img + self.img
