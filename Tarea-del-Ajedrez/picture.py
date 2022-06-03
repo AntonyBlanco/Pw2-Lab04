@@ -32,16 +32,12 @@ class Picture:
         letra = y[i]
         if(letra == '.'):
           colPieza = '.'
-          break
-        if(letra == '@'):
+        elif(letra == '@'):
           colPieza = '@'
-          break
-        if(letra == '_'):
+        elif(letra == '_'):
           colCasilla = '_'
-          break
-        if(letra == '='):
+        elif(letra == '='):
           colCasilla = '='
-          break
         i += 1
     colNeg1 = self._invColor(colPieza)
     colNeg2 = self._invColor(colCasilla)
