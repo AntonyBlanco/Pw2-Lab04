@@ -26,7 +26,7 @@ class Picture:
   #yo mero :v
   def join(self, p):
     count=0
-    content=list()
+    content=list[]
     print("len de p: ",len(p.img),"len de self: ",len(self.img))
     for x in self.img:
       content.append(x)
