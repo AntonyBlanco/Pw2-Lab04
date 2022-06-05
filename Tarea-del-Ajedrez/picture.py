@@ -1,4 +1,5 @@
 from importlib.resources import contents
+from shelve import Shelf
 from colors import *
 class Picture:
   def __init__(self, img):
@@ -14,11 +15,19 @@ class Picture:
 
   def verticalMirror(self):
     """ Devuelve el espejo vertical de la imagen """
-    return Picture(None)
+    content = []
+    for x in self.img:
+      content.append(x[::-1])
+    return Picture(content)
 
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
-    return Picture(None)
+    content = []
+    indice=len(self.img)-1
+    for x in self.img:
+      content.append(self.img[indice])
+      indice=indice-1
+    return Picture(content)
 
   def negative(self):
     """ Devuelve un negativo de la imagen """
@@ -27,15 +36,15 @@ class Picture:
   def join(self, p):
     count = 0
     content = []
-    print("len de p: ",len(p.img),"len de self: ",len(self.img))
     for x in self.img:
       content.append(x)
     for y in p.img:
       content[count] += y
       count = count+1
+    return Picture(content)
     """ Devuelve una nueva figura poniendo la figura del argumento 
         al lado derecho de la figura actual """
-    return Picture(content)
+    
 
   def up(self, p):
     content = p.img + self.img
