@@ -31,13 +31,13 @@
         <td>ASIGNATURA:</td><td colspan="5">Laboratorio de Programación Web 2</td>
     </tr>
     <tr>
-        <td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Git - GitHub</td>
+        <td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Python</td>
     </tr>
     <tr>
-        <td>NÚMERO DE PRÁCTICA:</td><td>01</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
+        <td>NÚMERO DE PRÁCTICA:</td><td>04</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
     </tr>
     <tr>
-        <td colspan="2">FECHA DE PRESENTACIÓN:</td><td>29-Abr-2022</td><td colspan="2">HORA DE PRESENTACIÓN:</td><td>16:00</td>
+        <td colspan="2">FECHA DE PRESENTACIÓN:</td><td>05-Jun-2022</td><td colspan="2">HORA DE PRESENTACIÓN:</td><td>16:00</td>
     </tr>
     <tr>
         <td colspan="3">INTEGRANTES:
@@ -50,7 +50,7 @@
         </ol>
         </td>
         <td colspan="2"> NOTA:</td>
-        <td>     </td>
+        <td><!--Espacio para la calificación de práctica-->     </td>
     </tr>
     <tr>
         <td colspan="6">DOCENTE:<br>
@@ -84,9 +84,9 @@
             <td>
             III. CONCLUSIONES<br>
                 <ul>
-                    <li>Git es como la representación de cambios guardados como en una estructura de arbol pasando por las fases de modificación, preparación y confirmación de un cambio.</li>
-                    <li>GitHub facilita la tarea de mantener un sistema de control de versiones en repositorios con proyectos compartidos como tambien personales, ya que ofrece muchas opciones para desarrolladores.</li>
-                    <li>Existen diversos softwares editores de código que simplifican codificación, la cuestión es elegir la adecuada ya que se diferencian por los lenguajes de programación que manejan y otras características.</li>
+                    <li>Las estructuras contenedoras de python son muy similares, pero se diferencian por el manejo(funciones de llamado, eliminación y agregación) y tipo(variables de igual o de diferentes tipos de datos) de elemento que pueden almacenar.</li>
+                    <li>Pygame es un módulo (librería) de Python que facilita la creación de juegos y programas multimedia.</li>
+                    <li>E</li>
                 </ul>
             </td>
         </tr>
@@ -102,6 +102,7 @@
     <tbody>
         <tr>
             <td>
+            <!--Espacio para la retroalimentación dada por el docente-->
             </td>
         </tr>
     </tbody>
@@ -116,8 +117,8 @@
     <tbody>
         <tr>
             <td>
-                [1] Escobedo, R., 2022. pw2/labs/lab01 at main · rescobedoq/pw2. [online] GitHub. Available at: https://github.com/rescobedoq/pw2/tree/main/labs/lab01.<br>
-                [2] Proyectos de tecnología con arduino, 2022. Manejo de ramas de Git, en vs code . (branch). [video] Available at: https://www.youtube.com/watch?v=k8UlMFtNDpE.
+                [1] Escobedo, R., 2022. pw2/labs/lab04 at main · rescobedoq/pw2. [online] GitHub. Available at: https://github.com/rescobedoq/pw2/tree/main/labs/lab01.<br>
+                [2] 
             </td>
         </tr>
     </tbody>
