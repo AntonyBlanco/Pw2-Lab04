@@ -21,8 +21,10 @@ class Picture:
   def horizontalMirror(self):
     """ Devuelve el espejo horizontal de la imagen """
     horizontal = []
-    self.img.reverse()
-    for value in self.img:
+    #new Picture() = self.img
+    nuevo = self.img
+    nuevo.reverse()
+    for value in self.nuevo:
       horizontal.append(value[:])
     return Picture(horizontal)
 
@@ -41,7 +43,8 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    return Picture(None)
+    self.img = p.img
+    return Picture(self.img)
   
   def horizontalRepeat(self, n):
     """ Devuelve una nueva figura repitiendo la figura actual al costado
