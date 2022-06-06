@@ -27,14 +27,17 @@ class Picture:
     return Picture(horizontal)
 
   def negative(self):
-    c = []
-
-    for x in range(len(self.img)):
-      c.append("")
-      for y in range(len(self.img[x])):
-        c[x] = c[x] + self._invColor(self.img[x][y])
-
-    return Picture(c)
+    """ Devuelve un negativo de la imagen """
+    content = []
+    x = 0
+    while x < len(self.img):
+      content.append("")
+      y = 0
+      while y < len(self.img[x]):
+        content[x] += self._invColor(self.img[x][y])
+        y += 1
+      x += 1
+    return Picture(content)
 
   def join(self, p):
     c = []
@@ -52,29 +55,37 @@ class Picture:
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
         figura actual """
-    self.img = p.img
-    return Picture(self.img)
+    Content = []
+    for x in p.img:
+      Content.append(x)
+    for x in range(len(p.img)):
+      for y in range(len(p.img[x])):
+        Content[x] = p.img[x].replace(" ",self.img[x][y])
+    return Picture(Content)
   
   def horizontalRepeat(self, n):
-    figura = []
-    for x in range(len(self.img)):
-      figura.append(self.img[x])
-
-    c = []
-
-    i=0
-    while i<n: 
-      for x in range(len(self.img)):
-        if i == n-1:
-          c.append(self.img[x]+figura[x])
-        else:
-          self.img[x] = self.img[x]+figura[x]
-      i=i+1
-
-    return Picture(c)
+    """ Devuelve una nueva figura repitiendo la figura actual al costado
+        la cantidad de veces que indique el valor de n """
+    content = []
+    for x in self.img:
+      content.append(x)
+    while(n > 0):
+      count = 0
+      for y in self.img:
+        content[count] += y
+        count += 1
+      n -= 1
+    return Picture(content)    
 
   def verticalRepeat(self, n):
-    return Picture(None)
+    content = []
+    for x in self.img:
+      content.append(x)
+    while(n > 0):
+      content += self.img
+      n -= 1
+    return Picture(content)
+    
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
