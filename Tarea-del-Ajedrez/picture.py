@@ -73,7 +73,11 @@ class Picture:
 
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
-    """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
-    o antihorario"""
-    return Picture(None)
+    c = []
+    for x in range(len(self.img)):
+      for y in range(len(self.img[x])):
+        if(x==0): c.append("")
+        c[y] = c[y]+self.img[x][y]
+
+    return Picture(c)
 
