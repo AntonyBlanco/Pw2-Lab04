@@ -21,7 +21,7 @@
     <span style="font-weight:bold;"><h2>INFORME DE LABORATORIO</h2></span>
 </div>
 
-<div style="text-align:center">
+<div style="align:center">
 <table>
 <theader>
     <tr><th colspan="6" style="width:50%; height:auto; text-align:center">INFORMACIÓN BÁSICA</th></tr>
@@ -71,6 +71,12 @@
         <tr>
             <td>
             I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
+            <br>
+            Para resolver los siguientes ejercicios sólo está permitido usar ciclos, condicionales, definición de listas por comprensión, sublistas, map, join, (+), lambda, zip, append, pop, range.
+            <ol type ="a">
+            <li>Implemente los métodos de la clase Picture. Se recomienda que implemente la clase picture por etapas, probando realizar los dibujos que se muestran en la siguiente preguntas.</li>
+            <li>Usando únicamente los métodos de los objetos de la clase Picture dibuje las siguientes figuras (invoque a draw):</li>
+            </ol>           
             </td>
         </tr>
         <tr>
@@ -78,9 +84,9 @@
             II. SOLUCIÓN DEL CUESTIONARIO<br>
             <br>
             &nbsp;<b>¿Qué son los archivos *.pyc?</b><br>
-            Los archivos con extención .pyc son las versiones que contienen código de bytes compilados de archivos .py, lo que facilita el tiempo de ejecución en la interpretación de un programa en lenguaje Python. Un archivo .pyc siempre tiene su archivo .py del cuál tendrá la compilación guardada para posteriores invocaciones.<br> 
+            Los archivos con extención .pyc son las versiones que contienen código de bytes compilados de archivos .py, osea cuando es ejecutado/interpretado por primera vez un archivo .py en el que se importe un módulo. Esto facilita el tiempo de ejecución en la interpretación de un programa en lenguaje Python. Un archivo .pyc siempre tiene su archivo .py del cuál tendrá la compilación guardada para posteriores invocaciones.<br> 
             <br>&nbsp;<b>¿Para qué sirve el directorio pycache?</b><br>
-            El directorio _pycache_ es creado automaticamente al importar un módulo por 1° vez en archivos .py que sean ejecutados, este directorio es creado a la par (mismo nivel) de los archivos .py y en el contiene la version .pyc de los archivos .py. Tambien se puede compilar manualmente un módulo para que se guarde en el directorio _pycache_, ejecutando:
+            El directorio _pycache_ es creado automaticamente al importar un módulo por 1° vez en archivos .py que sean ejecutados, este directorio es creado a la par (mismo nivel) de los archivos .py y en el contiene la version .pyc de los archivos .py que hayan sido intrepretados por primera vez. Tambien se puede compilar manualmente un módulo para que se guarde en el directorio _pycache_, ejecutando:
             <br><code>&nbsp;&nbsp;&nbsp;>>>import py_compile<br>
             &nbsp;&nbsp;&nbsp;>>> py_compile.compile('modulo.py') </code><br>
             ó, para todo un directorio que contenga archivos .py para compilar
@@ -104,6 +110,10 @@
                     <li>Las estructuras contenedoras de python son muy similares, pero se diferencian por el manejo(funciones de llamado, eliminación y agregación) y tipo(variables de igual o de diferentes tipos de datos) de elemento que pueden almacenar.</li>
                     <li>Pygame es un módulo (librería) de Python que facilita la creación de juegos y programas multimedia.</li>
                     <li>Las clases en Python funcionan con el mismo mecanismo del Paradigma de POO (Programación Orientada a Objetos) con atributos, médtodos y propiedades (atributos) de herencia que se pueden usar. Además que, al igual que en otros lenguajes, con las clases se pueden crear diferentes tipos de datos, y con los objetos se pueden crear instancias de esos tipos de datos. </li>
+                    <li>Los entornos virtuales nos sirven para tener diferentes versiones de módulos los cuales pueden llegar a actualizarse complicando la ejecución de programas que requieren de los mismos.</li>
+                    <li>Pygame es un módulo muy útil a la hora de mostrar un entorno gráfico lo cual ayuda a ver lo que uno está programando</li> 
+                    <li>Python es un lenguaje muy completo ya que cuenta con muchas funcionalidades lo cual lo hace un lenguaje muy potente a la hora de programar
+</li>
                 </ul>
             </td>
         </tr>
