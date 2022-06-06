@@ -1,3 +1,5 @@
+from importlib.resources import contents
+from shelve import Shelf
 from colors import *
 class Picture:
   def __init__(self, img):
@@ -40,15 +42,16 @@ class Picture:
     return Picture(content)
 
   def join(self, p):
-    c = []
-
-    length = len(p.img)
-
-    for x in range(length):
-      c.append(self.img[x]+p.img[x])
-
-    return Picture(c)
-
+    """ Devuelve una nueva figura poniendo la figura del argumento 
+        al lado derecho de la figura actual """
+    count = 0
+    content = []
+    for x in self.img:
+      content.append(x)
+    for y in p.img:
+      content[count] += y
+      count = count+1
+    return Picture(content)
   def up(self, p):
     content = p.img + self.img
     return Picture(content)
@@ -87,7 +90,6 @@ class Picture:
       n -= 1
     return Picture(content)
     
-
   #Extra: Sólo para realmente viciosos 
   def rotate(self):
     """Devuelve una figura rotada en 90 grados, puede ser en sentido horario
