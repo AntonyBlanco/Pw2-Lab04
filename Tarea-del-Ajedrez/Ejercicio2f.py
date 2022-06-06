@@ -1,4 +1,6 @@
 from interpreter import draw
 from chessPictures import *
-superior=square.join(square.negative()).horizontalRepeat(2)
-draw(superior)
+filaA=square.join(square.negative()).horizontalRepeat(4)
+filaB=square.negative().join(square).horizontalRepeat(4)
+union=filaA.under(filaB)
+draw(union.verticalRepeat(2))
