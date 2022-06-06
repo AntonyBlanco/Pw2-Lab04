@@ -51,11 +51,11 @@ class Picture:
     content = []
     for x in self.img:
       content.append(x)
-    while(n-1>0):
+    while(n > 0):
       count = 0
       for y in self.img:
         content[count] += y
-        count = count+1
+        count += 1
       n -= 1
     return Picture(content)    
     
