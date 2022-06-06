@@ -50,7 +50,8 @@ class Picture:
     return Picture(c)
 
   def up(self, p):
-    return Picture(None)
+    content = p.img + self.img
+    return Picture(content)
 
   def under(self, p):
     """ Devuelve una nueva figura poniendo la figura p sobre la
