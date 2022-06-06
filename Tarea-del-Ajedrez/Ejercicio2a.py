@@ -1,5 +1,7 @@
 from interpreter import draw
 from chessPictures import *
-superior=knight.join(knight.negative())
-inferior=knight.negative().join(knight)
-draw(superior.under(inferior))
+fil1 = knight.join(knight.negative())
+fil2 = knight.negative().join(knight)
+caballos = fil2.up(fil1)
+draw(caballos)
+
