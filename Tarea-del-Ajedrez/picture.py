@@ -61,9 +61,11 @@ class Picture:
     
 
   def verticalRepeat(self, n):
-    content = self.img
-    while(n-1>0):
-      content = content + self.img
+    content = []
+    for x in self.img:
+      content.append(x)
+    while(n > 0):
+      content += self.img
       n -= 1
     return Picture(content)
     
