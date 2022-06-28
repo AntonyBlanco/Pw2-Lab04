@@ -5,6 +5,4 @@ linea = square.join(square.negative())
 
 linea = linea.horizontalRepeat(3)
 
-
-
 draw(linea)
